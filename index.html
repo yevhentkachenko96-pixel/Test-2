@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тестова сторінка</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    /* Верхнє меню */
+    .navbar {
+      background-color: #1f2937;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      height: 60px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu-item {
+      position: relative;
+    }
+
+    .menu-item > a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 10px 5px;
+      display: block;
+      transition: color 0.2s;
+    }
+
+    .menu-item > a:hover {
+      color: #38bdf8;
+    }
+
+    /* Випадаюче меню */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 10;
+      min-width: 200px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 15px;
+      color: #374151;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .dropdown a:hover {
+      background-color: #f3f4f6;
+    }
+
+    .menu-item:hover .dropdown {
+      display: block;
+    }
+
+    /* Контент */
+    main {
+      padding: 40px;
+      text-align: center;
+      color: #111827;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="menu">
+      <div class="menu-item">
+        <a href="#">Документи</a>
+        <div class="dropdown">
+          <a href="#">Наказ №1</a>
+          <a href="#">Інструкція з безпеки</a>
+          <a href="#">Політика конфіденційності</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">Звіти</a>
+        <div class="dropdown">
+          <a href="#">Звіт за січень</a>
+          <a href="#">Звіт за лютий</a>
+          <a href="#">Фінансовий звіт</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">Контракти</a>
+        <div class="dropdown">
+          <a href="#">Контракт №101</a>
+          <a href="#">Контракт №102</a>
+          <a href="#">Додаткова угода</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Тестова сторінка для попереднього перегляду</h1>
+    <p>Це демонстраційна сторінка з меню та випадаючими списками документів.</p>
+  </main>
+
+</body>
+</html>
