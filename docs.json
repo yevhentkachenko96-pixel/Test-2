@@ -1,0 +1,12 @@
+{
+  "Dispatchers": [
+    {"key": "Onboarding", "url": "https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"},
+    {"key": "Tutorial", "url": "https://arxiv.org/pdf/2107.12958.pdf"}
+  ],
+  "HR": [
+    {"key": "Onboarding", "url": "https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"}
+  ],
+  "IT": [
+    {"key": "Infrastructure", "url": "https://arxiv.org/pdf/2107.12958.pdf"}
+  ]
+}
